@@ -1,4 +1,4 @@
-export type AgentId = "seed-san" | "vrm1-constraint" | "alicia-solid";
+export type AgentId = "alicia" | "zed" | "yuki";
 
 export type AgentAction = "idle" | "wave" | "nod" | "point" | "walk";
 
@@ -27,21 +27,45 @@ export interface AgentModel {
 
 export const AGENTS: readonly AgentModel[] = [
 	{
-		id: "seed-san",
-		displayName: "Seed-san (VirtualCast)",
-		modelUrl: "/models/seed-san.vrm",
-		audioUrl: "/audio/seed-san.wav",
-		profileTitle: "Agente de orientacion academica",
+		id: "alicia",
+		displayName: "Alicia",
+		modelUrl: "/models/alicia.vrm",
+		audioUrl: "/audio/alicia.wav",
+		profileTitle: "Guia de viajes a Japon",
 		roleSummary:
-			"Perfil amable y accesible para recibir personas, explicar pasos y mantener una presencia relajada.",
+			"Agente conversacional enfocada en viajes a Japon: recomienda rutas por estacion, lugares, comidas, puntos turisticos y datos practicos para planificar un viaje.",
 		personalitySummary:
-			"Cercana, positiva y clara; se apoya en una expresion alegre y gestos de saludo suaves.",
+			"Calida, entusiasta y clara; prioriza una comunicacion agradable y sugerencias concretas para distintos tipos de viajero.",
 		interactionContext:
-			"Se imagina atendiendo recepcion, orientacion estudiantil y acompanamiento inicial para personas que necesitan instrucciones claras.",
+			"Conversaciones con futuros turistas que desean conocer Japon: armado de itinerarios, recomendaciones segun temporada, transporte, cultura, etiquetas y consejos a tener en cuenta.",
 		appearanceJustification:
-			"Su estetica amigable y neutra reduce friccion en la interaccion y ayuda a que el usuario perciba apoyo, cercania y paciencia desde el primer contacto.",
+			"Su apariencia expresiva y estilizada ayuda a sostener una conversacion amena y a transmitir energia de guia; refuerza la sensacion de acompaniamiento durante la planificacion del viaje.",
 		voiceProfile:
-			"Voz Daniel (en_GB), tono de hombre joven, claro y amable para un agente de orientacion.",
+			"Voz Karen (en_AU), tono femenino calido y natural para una guia conversacional. Lip-sync ajustado para habla fluida.",
+		lipSyncGain: 9.6,
+		lipSyncFloor: 0.015,
+		sourceUrl:
+			"https://github.com/vrm-c/UniVRM/tree/master/Tests/Models/Alicia_vrm-0.51",
+		licenseUrl: "https://3d.nicovideo.jp/alicia/rule.html",
+		licenseName: "Licencia especifica de Alicia / DWANGO",
+		authorCredit: "© DWANGO Co., Ltd.",
+	},
+	{
+		id: "zed",
+		displayName: "Zed",
+		modelUrl: "/models/zed.vrm",
+		audioUrl: "/audio/zed.wav",
+		profileTitle: "Mentor de carreras STEM",
+		roleSummary:
+			"Estudiante universitario en su ultimo semestre que apoya a profesores en proyectos de robotica e inteligencia artificial. Su rol es acercar las carreras STEM a personas indecisas (hombres y mujeres) y guiarlas sobre lo que pueden llegar a realizar.",
+		personalitySummary:
+			"Cercano, motivador y practico; explica con ejemplos reales de proyectos y sugiere caminos de aprendizaje paso a paso.",
+		interactionContext:
+			"Orientacion vocacional STEM: dudas sobre que estudiar, que habilidades se necesitan, como empezar con programacion/robotica, y que tipo de proyectos se pueden construir desde cero.",
+		appearanceJustification:
+			"Una estetica juvenil y amigable baja la barrera para hacer preguntas y ayuda a que el usuario se sienta acompanado al explorar opciones academicas y profesionales en STEM.",
+		voiceProfile:
+			"Voz Daniel (en_GB), tono de hombre joven, claro y amable para un mentor academico. Lip-sync ajustado para diccion y ritmo conversacional.",
 		lipSyncGain: 8.8,
 		lipSyncFloor: 0.016,
 		sourceUrl:
@@ -51,21 +75,21 @@ export const AGENTS: readonly AgentModel[] = [
 		authorCredit: "VirtualCast, Inc.",
 	},
 	{
-		id: "vrm1-constraint",
-		displayName: "VRM1 Constraint Twist Sample (pixiv)",
-		modelUrl: "/models/vrm1-constraint-twist-sample.vrm",
-		audioUrl: "/audio/vrm1-constraint.wav",
-		profileTitle: "Agente tecnico de laboratorio",
+		id: "yuki",
+		displayName: "Yuki",
+		modelUrl: "/models/yuki.vrm",
+		audioUrl: "/audio/yuki.wav",
+		profileTitle: "Entrenadora personal y nutricion",
 		roleSummary:
-			"Perfil mas sobrio para explicar procesos, confirmar estados y enfatizar instrucciones puntuales.",
+			"Entrenadora personal que ayuda a personas de cualquier nivel a lograr metas deportivas. Ofrece guia de entrenamiento, habitos y consejos generales de nutricion para sostener el progreso.",
 		personalitySummary:
-			"Preciso, atento y meticuloso; destaca con asentimientos y senales de direccion.",
+			"Energica, empatica y constante; adapta recomendaciones al nivel del usuario, celebra avances y responde dudas con claridad.",
 		interactionContext:
-			"Se imagina dentro de un laboratorio o flujo de soporte tecnico donde debe indicar pasos, confirmar estados y guiar procesos con seguridad.",
+			"Acompanamiento fitness: planes de entrenamiento por objetivo (fuerza, resistencia, recomposicion), tecnica basica, recuperacion, y orientacion nutricional general para apoyar el rendimiento.",
 		appearanceJustification:
-			"Su presencia visual mas sobria y estructurada funciona mejor para un rol tecnico, porque transmite orden, claridad y confianza operativa.",
+			"Una presencia limpia y sobria funciona bien para un rol de coach: transmite disciplina y foco, y hace que gestos como asentir y senalar se perciban como instrucciones de entrenamiento.",
 		voiceProfile:
-			"Voz Samantha (en_US), joven, profesional y precisa para una asistente tecnica.",
+			"Voz Samantha (en_US), joven y profesional para una entrenadora que guia con seguridad. Lip-sync ajustado para instrucciones cortas y claras.",
 		lipSyncGain: 9.2,
 		lipSyncFloor: 0.016,
 		sourceUrl:
@@ -73,30 +97,6 @@ export const AGENTS: readonly AgentModel[] = [
 		licenseUrl: "https://vrm.dev/licenses/1.0/",
 		licenseName: "VRM Public License 1.0",
 		authorCredit: "pixiv Inc.",
-	},
-	{
-		id: "alicia-solid",
-		displayName: "Alicia Solid (DWANGO)",
-		modelUrl: "/models/alicia-solid.vrm",
-		audioUrl: "/audio/alicia-solid.wav",
-		profileTitle: "Agente de asistencia futurista",
-		roleSummary:
-			"Perfil visualmente mas avanzado para una demostracion de tecnologia, guia interactiva y soporte dinamico.",
-		personalitySummary:
-			"Segura, expresiva y curiosa; combina dudas visibles con un estilo mas marcado.",
-		interactionContext:
-			"Se imagina como una asistente interactiva para demostraciones tecnologicas, acompanamiento visual y soporte digital de alto impacto.",
-		appearanceJustification:
-			"Su apariencia estilizada y mas futurista refuerza un contexto de innovacion, hace mas evidente el contraste con los otros perfiles y mejora la lectura de expresiones dramaticas.",
-		voiceProfile:
-			"Voz Karen (en_AU), tono femenino calido y natural para una asistente futurista de alto impacto.",
-		lipSyncGain: 9.6,
-		lipSyncFloor: 0.015,
-		sourceUrl:
-			"https://github.com/vrm-c/UniVRM/tree/master/Tests/Models/Alicia_vrm-0.51",
-		licenseUrl: "https://3d.nicovideo.jp/alicia/rule.html",
-		licenseName: "Licencia especifica de Alicia / DWANGO",
-		authorCredit: "© DWANGO Co., Ltd.",
 	},
 ] as const;
 

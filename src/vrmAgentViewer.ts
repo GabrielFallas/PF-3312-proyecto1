@@ -576,8 +576,14 @@ export class VrmAgentViewer {
 		const nodW = this.actionWeights.nod;
 		const pointW = this.actionWeights.point;
 		const walkW = this.actionWeights.walk;
+		const activeW = Math.max(waveW, nodW, pointW, walkW);
+		const idlePostureW = clamp01(1 - activeW) * 0.85;
 
 		this.applyIdleBreathing(spine, hips, head, elapsed);
+		if (idlePostureW > 0.001) {
+			this.applyRelaxedUpperArm(rightUpperArm, -1, idlePostureW);
+			this.applyRelaxedUpperArm(leftUpperArm, 1, idlePostureW);
+		}
 		this.applyWaveAction(
 			rightUpperArm,
 			rightLowerArm,
@@ -706,7 +712,7 @@ export class VrmAgentViewer {
 		this.applyRelaxedUpperArm(leftUpperArm, 1, weight);
 
 		// Right arm in normalized space: +Z raises laterally, -Y brings it slightly forward.
-		// Alicia is the reference; Seed-san and VRM1 use the opposite rig-space sign.
+		// Alicia is the reference; Zed and Yuki use the opposite rig-space sign.
 		const upperQ = new THREE.Quaternion().setFromEuler(
 			new THREE.Euler(
 				degrees(WAVE_POSE.upperPitchDeg) * weight,
@@ -922,7 +928,7 @@ export class VrmAgentViewer {
 	}
 
 	private getArmOrientationSign(): number {
-		return this.currentAgent?.id === "alicia-solid" ? 1 : -1;
+		return this.currentAgent?.id === "alicia" ? 1 : -1;
 	}
 
 	private applyRelaxedUpperArm(

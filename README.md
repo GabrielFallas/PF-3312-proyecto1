@@ -1,4 +1,4 @@
-# PF-3312 Proyecto 1 · Agentes 3D con VRM
+# PF-3312 Proyecto 1 · Alicia, Zed y Yuki (VRM)
 
 Aplicacion web construida con Vite, Three.js y `@pixiv/three-vrm` para demostrar 3 agentes 3D distintos dentro de un motor grafico, con rigging humanoide, expresiones faciales, lip-sync por audio y acciones controladas desde interfaz.
 
@@ -13,11 +13,11 @@ Demostrar en el navegador que tres modelos 3D distintos cumplen los puntos tecni
 - Interaccion mediante interfaz grafica.
 - Documentacion de fuentes, creditos, licencias y justificacion estetica.
 
-## Modelos utilizados
+## Avatares y roles
 
-1. `Seed-san`
-2. `VRM1 Constraint Twist Sample`
-3. `Alicia Solid`
+1. `Alicia`: guia de viajes a Japon (rutas por estacion, comida, puntos turisticos y datos practicos).
+2. `Zed`: mentor de carreras STEM (robotica e IA) para orientar a personas indecisas.
+3. `Yuki`: entrenadora personal que acompana metas deportivas y consejos generales de nutricion.
 
 El detalle de fuentes y licencias esta en [public/models/SOURCES.md](public/models/SOURCES.md).
 
@@ -84,18 +84,18 @@ La validacion interactiva del navegador ya fue ejecutada con Playwright MCP sobr
 
 Las capturas actuales generadas durante el recorrido E2E estan en:
 
-- [docs/evidence/seed-san-view.png](docs/evidence/seed-san-view.png)
-- [docs/evidence/vrm1-constraint-view.png](docs/evidence/vrm1-constraint-view.png)
-- [docs/evidence/alicia-solid-view.png](docs/evidence/alicia-solid-view.png)
+- [docs/evidence/zed-view.png](docs/evidence/zed-view.png)
+- [docs/evidence/yuki-view.png](docs/evidence/yuki-view.png)
+- [docs/evidence/alicia-view.png](docs/evidence/alicia-view.png)
 
 ## Entregables de apoyo
 
 - [README.md](README.md)
 - [docs/informe-entrega.md](docs/informe-entrega.md)
 - [docs/checklist-evidencia.md](docs/checklist-evidencia.md)
-- [docs/evidence/seed-san-view.png](docs/evidence/seed-san-view.png)
-- [docs/evidence/vrm1-constraint-view.png](docs/evidence/vrm1-constraint-view.png)
-- [docs/evidence/alicia-solid-view.png](docs/evidence/alicia-solid-view.png)
+- [docs/evidence/zed-view.png](docs/evidence/zed-view.png)
+- [docs/evidence/yuki-view.png](docs/evidence/yuki-view.png)
+- [docs/evidence/alicia-view.png](docs/evidence/alicia-view.png)
 - [public/models/SOURCES.md](public/models/SOURCES.md)
 
 ## Entregables finales

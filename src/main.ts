@@ -20,8 +20,8 @@ appEl.innerHTML = `
     <aside class="panel" aria-label="Controles">
       <header class="panel__header">
 	        <p class="eyebrow">PF-3312 / Three.js + VRM</p>
-	        <h1>Agentes virtuales listos para evaluacion</h1>
-	        <p class="panel__intro">Tres perfiles distintos, voces diferenciadas y evidencia tecnica visible dentro del motor grafico.</p>
+		        <h1>Alicia, Zed y Yuki</h1>
+		        <p class="panel__intro">Tres perfiles con roles definidos, voces diferenciadas y evidencia tecnica visible dentro del motor grafico.</p>
       </header>
 
       <div class="panel__section">

@@ -2,12 +2,12 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const VRM_FILES = [
-	{ id: "seed-san", file: "public/models/seed-san.vrm" },
+	{ id: "zed", file: "public/models/zed.vrm" },
 	{
-		id: "vrm1-constraint-twist-sample",
-		file: "public/models/vrm1-constraint-twist-sample.vrm",
+		id: "yuki",
+		file: "public/models/yuki.vrm",
 	},
-	{ id: "alicia-solid", file: "public/models/alicia-solid.vrm" },
+	{ id: "alicia", file: "public/models/alicia.vrm" },
 ];
 
 function sortStrings(values) {

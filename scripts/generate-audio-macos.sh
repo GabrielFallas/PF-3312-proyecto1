@@ -23,19 +23,19 @@ render_wav() {
 render_wav \
   "Daniel" \
   178 \
-  "seed-san.wav" \
-  "Hello, I am Seed, your campus guide. I can welcome you, explain each step clearly, and help you feel comfortable from the start."
+  "zed.wav" \
+  "Hello, I am Zed. If you are considering a STEM degree, I can share real robotics and AI projects and help you choose a first step."
 
 render_wav \
   "Samantha" \
   176 \
-  "vrm1-constraint.wav" \
-  "I am your technical lab assistant. I can confirm the current status, point to the next action, and guide you step by step."
+  "yuki.wav" \
+  "Hi, I am Yuki. I can guide your workouts, adapt to your level, and share general nutrition tips to support your goals."
 
 render_wav \
   "Karen" \
   174 \
-  "alicia-solid.wav" \
-  "Alicia system online. Preparing interactive guidance, visual tracking, and expressive support in real time."
+  "alicia.wav" \
+  "Hi, I am Alicia. I can help you plan a trip to Japan with seasonal routes, food recommendations, and practical travel tips."
 
 ls -lh "$OUT_DIR"/*.wav

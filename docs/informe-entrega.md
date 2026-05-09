@@ -15,17 +15,17 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 
 ## 2. Ficha tecnica de los tres modelos
 
-### 2.1 Seed-san
+### 2.1 Zed
 
-**Archivo:** `public/models/seed-san.vrm`
+**Archivo:** `public/models/zed.vrm`
 
-**Perfil del agente:** agente de orientacion academica.
+**Perfil del agente:** mentor de carreras STEM.
 
-**Rol y personalidad:** representa un agente amable, cercano y positivo, pensado para recibir a una persona, orientarla en pasos iniciales y mantener una presencia clara y accesible.
+**Rol y personalidad:** estudiante universitario en su ultimo semestre que apoya proyectos de robotica e inteligencia artificial. Acompana a personas indecisas (hombres y mujeres) sobre carreras STEM, explicando que se puede construir y como iniciar.
 
-**Contexto de uso imaginado:** recepcion virtual, orientacion estudiantil o acompanamiento en interfaces donde el usuario necesita instrucciones sencillas y confianza desde el primer contacto.
+**Contexto de uso imaginado:** orientacion vocacional STEM, exploracion de rutas de aprendizaje y ejemplos de proyectos reales (programacion, electronica, robotica e IA).
 
-**Justificacion de apariencia:** se eligio porque su estilo visual es amigable y neutro. Esa estetica baja la friccion inicial de la interaccion, favorece que el usuario perciba apoyo y hace que expresiones como alegria y saludo se vean naturales.
+**Justificacion de apariencia:** se eligio porque su estetica juvenil y amigable baja la barrera de entrada y hace natural la conversacion motivacional. Gestos como saludo y alegria refuerzan un rol de mentor cercano.
 
 **Analisis tecnico:**
 
@@ -37,20 +37,20 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 - Vertices: `34059`.
 - Skinned meshes: `21`.
 - Max joints: `128`.
-- Evidencia visual en motor: [docs/evidence/seed-san-view.png](docs/evidence/seed-san-view.png).
-- Fuente y licencia: [public/models/SOURCES.md](public/models/SOURCES.md).
+- Evidencia visual en motor: [evidence/zed-view.png](evidence/zed-view.png).
+- Fuente y licencia: [../public/models/SOURCES.md](../public/models/SOURCES.md).
 
-### 2.2 VRM1 Constraint Twist Sample
+### 2.2 Yuki
 
-**Archivo:** `public/models/vrm1-constraint-twist-sample.vrm`
+**Archivo:** `public/models/yuki.vrm`
 
-**Perfil del agente:** agente tecnico de laboratorio.
+**Perfil del agente:** entrenadora personal y nutricion.
 
-**Rol y personalidad:** representa un agente preciso, atento y meticuloso, adecuado para guiar procesos, confirmar estados o explicar pasos tecnicos con una presencia mas sobria.
+**Rol y personalidad:** entrenadora personal energica y empatica que adapta recomendaciones al nivel del usuario. Ofrece guia de entrenamiento, habitos y consejos generales de nutricion.
 
-**Contexto de uso imaginado:** soporte tecnico, laboratorio, flujos de verificacion o ambientes donde el agente deba reforzar orden, claridad y seguimiento de instrucciones.
+**Contexto de uso imaginado:** acompanamiento fitness para metas deportivas (fuerza, resistencia, recomposicion), tecnica basica, recuperacion y orientacion nutricional general.
 
-**Justificacion de apariencia:** se eligio porque su presencia visual es mas estructurada y utilitaria. Esa estetica apoya mejor gestos como asentir y senalar, y ayuda a comunicar seriedad operativa.
+**Justificacion de apariencia:** se eligio porque su presencia visual limpia y sobria funciona bien para un rol de coach: transmite disciplina, foco y claridad al dar instrucciones (asentir, senalar y caminar).
 
 **Analisis tecnico:**
 
@@ -62,20 +62,20 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 - Vertices: `24951`.
 - Skinned meshes: `13`.
 - Max joints: `129`.
-- Evidencia visual en motor: [docs/evidence/vrm1-constraint-view.png](docs/evidence/vrm1-constraint-view.png).
-- Fuente y licencia: [public/models/SOURCES.md](public/models/SOURCES.md).
+- Evidencia visual en motor: [evidence/yuki-view.png](evidence/yuki-view.png).
+- Fuente y licencia: [../public/models/SOURCES.md](../public/models/SOURCES.md).
 
-### 2.3 Alicia Solid
+### 2.3 Alicia
 
-**Archivo:** `public/models/alicia-solid.vrm`
+**Archivo:** `public/models/alicia.vrm`
 
-**Perfil del agente:** agente de asistencia futurista.
+**Perfil del agente:** guia de viajes a Japon.
 
-**Rol y personalidad:** representa un agente seguro, expresivo y curioso, orientado a una demostracion tecnologica o a una experiencia de apoyo digital con mayor identidad visual.
+**Rol y personalidad:** agente conversacional calida y entusiasta para planear viajes a Japon. Recomienda rutas por estacion, lugares, comidas, puntos turisticos y datos practicos a considerar.
 
-**Contexto de uso imaginado:** demostraciones interactivas, soporte digital avanzado, guiado visual en exhibiciones de tecnologia o presentaciones de alto impacto.
+**Contexto de uso imaginado:** conversaciones con futuros turistas que quieren conocer Japon: armado de itinerarios, recomendaciones segun temporada, transporte, cultura y consejos para viajar con mas confianza.
 
-**Justificacion de apariencia:** se eligio porque su estilo es mas estilizado y tecnologico. Eso refuerza la sensacion de innovacion, diferencia claramente este agente de los otros dos y mejora la lectura de expresiones mas marcadas.
+**Justificacion de apariencia:** se eligio porque su apariencia expresiva facilita una comunicacion agradable. Ayuda a sostener dialogo y a transmitir energia de guia, manteniendo una identidad visual memorable.
 
 **Analisis tecnico:**
 
@@ -87,8 +87,8 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 - Vertices: `21623`.
 - Skinned meshes: `20`.
 - Max joints: `106`.
-- Evidencia visual en motor: [docs/evidence/alicia-solid-view.png](docs/evidence/alicia-solid-view.png).
-- Fuente y licencia: [public/models/SOURCES.md](public/models/SOURCES.md).
+- Evidencia visual en motor: [evidence/alicia-view.png](evidence/alicia-view.png).
+- Fuente y licencia: [../public/models/SOURCES.md](../public/models/SOURCES.md).
 
 ## 3. Analisis tecnico consolidado
 
@@ -96,11 +96,11 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 
 La verificacion de metadatos del propio archivo VRM confirma lo siguiente:
 
-- Seed-san: autor `VirtualCast, Inc.`, licencia `VRM Public License 1.0`, redistribucion permitida y credito requerido.
-- VRM1 Constraint Twist Sample: autor `pixiv Inc.`, licencia `VRM Public License 1.0`, redistribucion permitida.
-- Alicia Solid: autor `DWANGO Co., Ltd.`, licencia especifica del modelo Alicia, con restricciones expresas de uso violento y sexual.
+- Zed (modelo base Seed-san): autor `VirtualCast, Inc.`, licencia `VRM Public License 1.0`, redistribucion permitida y credito requerido.
+- Yuki (modelo base VRM1 Constraint Twist Sample): autor `pixiv Inc.`, licencia `VRM Public License 1.0`, redistribucion permitida.
+- Alicia (modelo base Alicia Solid): autor `DWANGO Co., Ltd.`, licencia especifica del modelo Alicia, con restricciones expresas de uso violento y sexual.
 
-El detalle completo esta en [public/models/SOURCES.md](public/models/SOURCES.md).
+El detalle completo esta en [../public/models/SOURCES.md](../public/models/SOURCES.md).
 
 ### 3.2 Rigging y blendshapes
 
@@ -117,9 +117,11 @@ En cuanto a blendshapes, los tres modelos exponen presets utilizables para expre
 
 Las capturas guardadas en el repositorio muestran los modelos cargados y el panel tecnico dentro del motor grafico:
 
-- [docs/evidence/seed-san-view.png](docs/evidence/seed-san-view.png)
-- [docs/evidence/vrm1-constraint-view.png](docs/evidence/vrm1-constraint-view.png)
-- [docs/evidence/alicia-solid-view.png](docs/evidence/alicia-solid-view.png)
+Las capturas correspondientes a esta version estan en:
+
+- [evidence/zed-view.png](evidence/zed-view.png)
+- [evidence/yuki-view.png](evidence/yuki-view.png)
+- [evidence/alicia-view.png](evidence/alicia-view.png)
 
 ## 4. Paquete de activos tecnicos
 
@@ -127,10 +129,10 @@ El paquete de assets entregable corresponde al proyecto completo configurado y o
 
 ### 4.1 Contenido incluido
 
-- Tres modelos VRM con rigging funcional en [public/models](public/models).
-- Audios por agente para prueba de lip-sync en [public/audio](public/audio).
-- Codigo del visor, animacion y expresiones en [src](src).
-- Scripts de verificacion tecnica en [scripts](scripts).
+- Tres modelos VRM con rigging funcional en [../public/models](../public/models).
+- Audios por agente para prueba de lip-sync en [../public/audio](../public/audio).
+- Codigo del visor, animacion y expresiones en [../src](../src).
+- Scripts de verificacion tecnica en [../scripts](../scripts).
 
 ### 4.2 Soporte funcional incluido
 
@@ -154,23 +156,11 @@ Para cumplir el entregable del video, la demo debe mostrar:
 Guion recomendado de menos de 3 minutos:
 
 1. Abrir la aplicacion con el panel tecnico visible.
-2. Mostrar Seed-san y ejecutar `Saludar` y `Alegria`.
+2. Mostrar Zed y ejecutar `Saludar` y `Alegria`.
 3. Reproducir el audio para evidenciar lip-sync.
-4. Cambiar a VRM1 Constraint Twist Sample y ejecutar `Asentir` y `Senalar`.
-5. Cambiar a Alicia Solid y ejecutar `Caminar` y `Duda`.
+4. Cambiar a Yuki y ejecutar `Asentir` y `Senalar`.
+5. Cambiar a Alicia y ejecutar `Caminar` y `Duda`.
 6. Cerrar mostrando que los tres modelos comparten el mismo visor y el mismo flujo de cambio de estado.
 
-El enlace no listado de YouTube debe quedar incluido en [README.md](README.md).
-
-## 6. Validacion recomendada antes de entregar
-
-1. Ejecutar `npm run build`.
-2. Ejecutar `npm run verify:assets`.
-3. Levantar la app con `npm run dev -- --host 127.0.0.1 --port 4173`.
-4. Revisar que las capturas y el video correspondan al estado final del proyecto.
-5. Exportar este archivo a PDF.
-
-## 7. Exportacion a PDF
-
-Este archivo esta redactado para exportarse directamente a PDF desde la vista previa Markdown de VS Code o desde el navegador.
+El enlace no listado de YouTube debe quedar incluido en [../README.md](../README.md).
 
