@@ -1,19 +1,19 @@
 # Informe de Entrega · PF-3312 Proyecto 1
 
-## 1. Documento de seleccion y justificacion estetica
+## 1. Documento de selección y justificación estética
 
-Este reporte resume la seleccion de tres agentes 3D en formato VRM, su justificacion estetica, el contexto de uso imaginado y la evidencia tecnica de que funcionan dentro del motor grafico de la aplicacion.
+Este reporte resume la selección de tres agentes 3D en formato VRM, su justificación estética, el contexto de uso imaginado y la evidencia técnica de que funcionan dentro del motor gráfico de la aplicación.
 
-La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con soporte para:
+La solución fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con soporte para:
 
 - rigging humanoide funcional,
 - blendshapes y presets de expresion,
-- visemes para lip-sync,
+- movimientos para lip-sync,
 - acciones procedurales,
 - carga y cambio de modelo en tiempo real,
-- evidencia tecnica visible dentro del motor.
+- evidencia técnica visible dentro del motor.
 
-## 2. Ficha tecnica de los tres modelos
+## 2. Ficha técnica de los tres modelos
 
 ### 2.1 Zed
 
@@ -21,13 +21,13 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 
 **Perfil del agente:** mentor de carreras STEM.
 
-**Rol y personalidad:** estudiante universitario en su ultimo semestre que apoya proyectos de robotica e inteligencia artificial. Acompana a personas indecisas (hombres y mujeres) sobre carreras STEM, explicando que se puede construir y como iniciar.
+**Rol y personalidad:** estudiante universitario en su último semestre que apoya proyectos de robotica e inteligencia artificial. Acompaña a personas indecisas (hombres y mujeres) sobre carreras STEM, explicando que se puede construir y como iniciar.
 
-**Contexto de uso imaginado:** orientacion vocacional STEM, exploracion de rutas de aprendizaje y ejemplos de proyectos reales (programacion, electronica, robotica e IA).
+**Contexto de uso imaginado:** orientacion vocacional STEM, exploración de rutas de aprendizaje y ejemplos de proyectos reales (programación, electrónica, robótica e IA).
 
-**Justificacion de apariencia:** se eligio porque su estetica juvenil y amigable baja la barrera de entrada y hace natural la conversacion motivacional. Gestos como saludo y alegria refuerzan un rol de mentor cercano.
+**Justificacion de apariencia:** se eligió porque su estética juvenil y amigable baja la barrera de entrada y hace natural la conversación motivacional. Gestos como saludo y alegria refuerzan un rol de mentor cercano.
 
-**Analisis tecnico:**
+**Análisis tecnico:**
 
 - Rigging humanoide: si.
 - Blendshapes/expresiones: si.
@@ -47,20 +47,20 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 
 **Archivo:** `public/models/yuki.vrm`
 
-**Perfil del agente:** entrenadora personal y nutricion.
+**Perfil del agente:** entrenadora personal y nutrición.
 
-**Rol y personalidad:** entrenadora personal energica y empatica que adapta recomendaciones al nivel del usuario. Ofrece guia de entrenamiento, habitos y consejos generales de nutricion.
+**Rol y personalidad:** entrenadora personal enérgica y empatica que adapta recomendaciones al nivel del usuario. Ofrece guía de entrenamiento, hábitos y consejos generales de nutrición.
 
-**Contexto de uso imaginado:** acompanamiento fitness para metas deportivas (fuerza, resistencia, recomposicion), tecnica basica, recuperacion y orientacion nutricional general.
+**Contexto de uso imaginado:** acompañamiento fitness para metas deportivas (fuerza, resistencia, recomposicion), técnica básica, recuperación y orientación nutricional general.
 
-**Justificacion de apariencia:** se eligio porque su presencia visual limpia y sobria funciona bien para un rol de coach: transmite disciplina, foco y claridad al dar instrucciones (asentir, senalar y caminar).
+**Justificacion de apariencia:** se eligió porque su presencia visual limpia y sobria funciona bien para un rol de coach: transmite disciplina, foco y claridad al dar instrucciones (asentir, senalar y caminar).
 
-**Analisis tecnico:**
+**Análisis técnico:**
 
 - Rigging humanoide: si.
 - Blendshapes/expresiones: si.
 - Visemes para lip-sync: `aa, ih, ou, ee, oh`.
-- Expresiones observables: presets equivalentes para alegria, tristeza y duda resueltos por el visor.
+- Expresiones observables: presets equivalentes para alegría, tristeza y duda resueltos por el visor.
 - Triangulos: `36470`.
 - Vertices: `24951`.
 - Skinned meshes: `13`.
@@ -68,22 +68,22 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 - Evidencia visual en motor:
 	- Vista + panel tecnico: [evidence/yuki-view.png](evidence/yuki-view.png).
 	- Accion (rigging): [evidence/yuki-walk.png](evidence/yuki-walk.png).
-	- Expresion (blendshapes): [evidence/yuki-expr-joy.png](evidence/yuki-expr-joy.png).
+	- Expresión (blendshapes): [evidence/yuki-expr-joy.png](evidence/yuki-expr-joy.png).
 - Fuente y licencia: [../public/models/SOURCES.md](../public/models/SOURCES.md).
 
 ### 2.3 Alicia
 
 **Archivo:** `public/models/alicia.vrm`
 
-**Perfil del agente:** guia de viajes a Japon.
+**Perfil del agente:** guia de viajes a Japón.
 
-**Rol y personalidad:** agente conversacional calida y entusiasta para planear viajes a Japon. Recomienda rutas por estacion, lugares, comidas, puntos turisticos y datos practicos a considerar.
+**Rol y personalidad:** agente conversacional cálida y entusiasta para planear viajes a Japón. Recomienda rutas por estación, lugares, comidas, puntos turísticos y datos prácticos a considerar.
 
-**Contexto de uso imaginado:** conversaciones con futuros turistas que quieren conocer Japon: armado de itinerarios, recomendaciones segun temporada, transporte, cultura y consejos para viajar con mas confianza.
+**Contexto de uso imaginado:** conversaciones con futuros turistas que quieren conocer Japón: armado de itinerarios, recomendaciones según temporada, transporte, cultura y consejos para viajar con mas confianza.
 
-**Justificacion de apariencia:** se eligio porque su apariencia expresiva facilita una comunicacion agradable. Ayuda a sostener dialogo y a transmitir energia de guia, manteniendo una identidad visual memorable.
+**Justificación de apariencia:** se eligió porque su apariencia expresiva facilita una comunicación agradable. Ayuda a sostener dialogo y a transmitir energía de guía, manteniendo una identidad visual memorable.
 
-**Analisis tecnico:**
+**Análisis técnico:**
 
 - Rigging humanoide: si.
 - Blendshapes/expresiones: si.
@@ -99,15 +99,15 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 	- Expresion (blendshapes): [evidence/alicia-expr-joy.png](evidence/alicia-expr-joy.png).
 - Fuente y licencia: [../public/models/SOURCES.md](../public/models/SOURCES.md).
 
-## 3. Analisis tecnico consolidado
+## 3. Análisis técnico consolidado
 
 ### 3.1 Metadatos, creditos y licencias
 
-La verificacion de metadatos del propio archivo VRM confirma lo siguiente:
+La verificación de metadatos del propio archivo VRM confirma lo siguiente:
 
-- Zed (modelo base Seed-san): autor `VirtualCast, Inc.`, licencia `VRM Public License 1.0`, redistribucion permitida y credito requerido.
-- Yuki (modelo base VRM1 Constraint Twist Sample): autor `pixiv Inc.`, licencia `VRM Public License 1.0`, redistribucion permitida.
-- Alicia (modelo base Alicia Solid): autor `DWANGO Co., Ltd.`, licencia especifica del modelo Alicia, con restricciones expresas de uso violento y sexual.
+- Zed (modelo base Seed-san): autor `VirtualCast, Inc.`, licencia `VRM Public License 1.0`, redistribución permitida y crédito requerido.
+- Yuki (modelo base VRM1 Constraint Twist Sample): autor `pixiv Inc.`, licencia `VRM Public License 1.0`, redistribución permitida.
+- Alicia (modelo base Alicia Solid): autor `DWANGO Co., Ltd.`, licencia específica del modelo Alicia, con restricciones expresas de uso violento y sexual.
 
 El detalle completo esta en [../public/models/SOURCES.md](../public/models/SOURCES.md).
 
@@ -120,13 +120,13 @@ Los tres modelos cargan correctamente como humanoides VRM y responden a huesos n
 - `Senalar`
 - `Caminar`
 
-En cuanto a blendshapes, los tres modelos exponen presets utilizables para expresiones faciales y visemes de boca. La aplicacion resuelve esos presets por modelo para mapear `Alegria`, `Tristeza`, `Duda` y apertura de boca para lip-sync.
+En cuanto a blendshapes, los tres modelos exponen presets utilizables para expresiones faciales y movimientos de boca. La aplicación resuelve esos presets por modelo para mapear `Alegria`, `Tristeza`, `Duda` y apertura de boca para lip-sync.
 
-### 3.3 Evidencia visual dentro del motor grafico
+### 3.3 Evidencia visual dentro del motor gráfico
 
-Las capturas guardadas en el repositorio muestran los modelos cargados y el panel tecnico dentro del motor grafico:
+Las capturas guardadas en el repositorio muestran los modelos cargados y el panel técnico dentro del motor gráfico:
 
-Las capturas correspondientes a esta version estan en:
+Las capturas correspondientes a esta versión estan en:
 
 - [evidence/zed-view.png](evidence/zed-view.png)
 - [evidence/yuki-view.png](evidence/yuki-view.png)
@@ -146,15 +146,15 @@ El paquete de assets entregable corresponde al proyecto completo configurado y o
 
 - Tres modelos VRM con rigging funcional en [../public/models](../public/models).
 - Audios por agente para prueba de lip-sync en [../public/audio](../public/audio).
-- Codigo del visor, animacion y expresiones en [../src](../src).
-- Scripts de verificacion tecnica en [../scripts](../scripts).
+- Código del visor, animacion y expresiones en [../src](../src).
+- Scripts de verificación técnica en [../scripts](../scripts).
 
 ### 4.2 Soporte funcional incluido
 
 El proyecto ya contiene:
 
 - carga y cambio entre los 3 modelos,
-- rigging funcional dentro del motor grafico,
-- blendshapes basicas para boca y expresiones,
+- rigging funcional dentro del motor gráfico,
+- blendshapes básicas para boca y expresiones,
 - lip-sync por audio pregrabado,
-- estructura de carpetas lista para ejecucion e integracion.
+- estructura de carpetas lista para ejecución e integración.
