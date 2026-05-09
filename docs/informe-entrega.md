@@ -37,7 +37,10 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 - Vertices: `34059`.
 - Skinned meshes: `21`.
 - Max joints: `128`.
-- Evidencia visual en motor: [evidence/zed-view.png](evidence/zed-view.png).
+- Evidencia visual en motor:
+	- Vista + panel tecnico: [evidence/zed-view.png](evidence/zed-view.png).
+	- Accion (rigging): [evidence/zed-walk.png](evidence/zed-walk.png).
+	- Expresion (blendshapes): [evidence/zed-expr-joy.png](evidence/zed-expr-joy.png).
 - Fuente y licencia: [../public/models/SOURCES.md](../public/models/SOURCES.md).
 
 ### 2.2 Yuki
@@ -62,7 +65,10 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 - Vertices: `24951`.
 - Skinned meshes: `13`.
 - Max joints: `129`.
-- Evidencia visual en motor: [evidence/yuki-view.png](evidence/yuki-view.png).
+- Evidencia visual en motor:
+	- Vista + panel tecnico: [evidence/yuki-view.png](evidence/yuki-view.png).
+	- Accion (rigging): [evidence/yuki-walk.png](evidence/yuki-walk.png).
+	- Expresion (blendshapes): [evidence/yuki-expr-joy.png](evidence/yuki-expr-joy.png).
 - Fuente y licencia: [../public/models/SOURCES.md](../public/models/SOURCES.md).
 
 ### 2.3 Alicia
@@ -87,7 +93,10 @@ La solucion fue implementada con Three.js, TypeScript y `@pixiv/three-vrm`, con 
 - Vertices: `21623`.
 - Skinned meshes: `20`.
 - Max joints: `106`.
-- Evidencia visual en motor: [evidence/alicia-view.png](evidence/alicia-view.png).
+- Evidencia visual en motor:
+	- Vista + panel tecnico: [evidence/alicia-view.png](evidence/alicia-view.png).
+	- Accion (rigging): [evidence/alicia-walk.png](evidence/alicia-walk.png).
+	- Expresion (blendshapes): [evidence/alicia-expr-joy.png](evidence/alicia-expr-joy.png).
 - Fuente y licencia: [../public/models/SOURCES.md](../public/models/SOURCES.md).
 
 ## 3. Analisis tecnico consolidado
@@ -123,6 +132,12 @@ Las capturas correspondientes a esta version estan en:
 - [evidence/yuki-view.png](evidence/yuki-view.png)
 - [evidence/alicia-view.png](evidence/alicia-view.png)
 
+Adicionalmente, se incluyen capturas por accion (rigging) y por expresion (blendshapes) para cada agente, por ejemplo:
+
+- Zed: [evidence/zed-walk.png](evidence/zed-walk.png) y [evidence/zed-expr-joy.png](evidence/zed-expr-joy.png)
+- Yuki: [evidence/yuki-walk.png](evidence/yuki-walk.png) y [evidence/yuki-expr-joy.png](evidence/yuki-expr-joy.png)
+- Alicia: [evidence/alicia-walk.png](evidence/alicia-walk.png) y [evidence/alicia-expr-joy.png](evidence/alicia-expr-joy.png)
+
 ## 4. Paquete de activos tecnicos
 
 El paquete de assets entregable corresponde al proyecto completo configurado y organizado para integracion.
@@ -143,24 +158,3 @@ El proyecto ya contiene:
 - blendshapes basicas para boca y expresiones,
 - lip-sync por audio pregrabado,
 - estructura de carpetas lista para ejecucion e integracion.
-
-## 5. Video de demostracion
-
-Para cumplir el entregable del video, la demo debe mostrar:
-
-- al menos dos acciones fisicas,
-- lip-sync con audio corto,
-- transiciones entre acciones,
-- cambio entre los tres modelos.
-
-Guion recomendado de menos de 3 minutos:
-
-1. Abrir la aplicacion con el panel tecnico visible.
-2. Mostrar Zed y ejecutar `Saludar` y `Alegria`.
-3. Reproducir el audio para evidenciar lip-sync.
-4. Cambiar a Yuki y ejecutar `Asentir` y `Senalar`.
-5. Cambiar a Alicia y ejecutar `Caminar` y `Duda`.
-6. Cerrar mostrando que los tres modelos comparten el mismo visor y el mismo flujo de cambio de estado.
-
-El enlace no listado de YouTube debe quedar incluido en [../README.md](../README.md).
-
