@@ -1,4 +1,4 @@
-# Generates short Spanish demo audios (WAV) using Windows SAPI.
+# Generates short English demo audios (WAV) using Windows SAPI.
 # Output: public/audio/*.wav
 
 $ErrorActionPreference = 'Stop'
@@ -28,8 +28,8 @@ function New-WavFromText {
   $stream.Close()
 }
 
-New-WavFromText -Text 'Hola, soy Alicia. Te ayudo a planear tu viaje a Japón con rutas por estación, comida y lugares imperdibles.' -OutFile (Join-Path $outDir 'alicia.wav')
-New-WavFromText -Text 'Hola, soy Zed. Si te interesa una carrera STEM, puedo contarte proyectos reales de robótica e inteligencia artificial y por dónde empezar.' -OutFile (Join-Path $outDir 'zed.wav')
-New-WavFromText -Text 'Hola, soy Yuki. Puedo ayudarte con un plan de entrenamiento y consejos generales de nutrición para alcanzar tus metas.' -OutFile (Join-Path $outDir 'yuki.wav')
+New-WavFromText -Text 'Hi, I am Alicia. I can help you plan a trip to Japan with seasonal routes, food recommendations, and practical travel tips.' -OutFile (Join-Path $outDir 'alicia.wav')
+New-WavFromText -Text 'Hello, I am Zed. If you are considering a STEM degree, I can share real robotics and AI projects and help you choose a first step.' -OutFile (Join-Path $outDir 'zed.wav')
+New-WavFromText -Text 'Hi, I am Yuki. I can guide your workouts, adapt to your level, and share general nutrition tips to support your goals.' -OutFile (Join-Path $outDir 'yuki.wav')
 
 Get-ChildItem $outDir -Filter '*.wav' | Select-Object Name, Length

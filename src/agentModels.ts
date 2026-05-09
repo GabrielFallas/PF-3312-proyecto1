@@ -30,7 +30,7 @@ export const AGENTS: readonly AgentModel[] = [
 		id: "alicia",
 		displayName: "Alicia",
 		modelUrl: "/models/alicia.vrm",
-		audioUrl: "/audio/alicia.wav",
+		audioUrl: "/audio/alicia.wav?v=20260509-english-lines",
 		profileTitle: "Guia de viajes a Japon",
 		roleSummary:
 			"Agente conversacional enfocada en viajes a Japon: recomienda rutas por estacion, lugares, comidas, puntos turisticos y datos practicos para planificar un viaje.",
@@ -54,7 +54,7 @@ export const AGENTS: readonly AgentModel[] = [
 		id: "zed",
 		displayName: "Zed",
 		modelUrl: "/models/zed.vrm",
-		audioUrl: "/audio/zed.wav",
+		audioUrl: "/audio/zed.wav?v=20260509-english-lines",
 		profileTitle: "Mentor de carreras STEM",
 		roleSummary:
 			"Estudiante universitario en su ultimo semestre que apoya a profesores en proyectos de robotica e inteligencia artificial. Su rol es acercar las carreras STEM a personas indecisas (hombres y mujeres) y guiarlas sobre lo que pueden llegar a realizar.",
@@ -78,7 +78,7 @@ export const AGENTS: readonly AgentModel[] = [
 		id: "yuki",
 		displayName: "Yuki",
 		modelUrl: "/models/yuki.vrm",
-		audioUrl: "/audio/yuki.wav",
+		audioUrl: "/audio/yuki.wav?v=20260509-english-lines",
 		profileTitle: "Entrenadora personal y nutricion",
 		roleSummary:
 			"Entrenadora personal que ayuda a personas de cualquier nivel a lograr metas deportivas. Ofrece guia de entrenamiento, habitos y consejos generales de nutricion para sostener el progreso.",
